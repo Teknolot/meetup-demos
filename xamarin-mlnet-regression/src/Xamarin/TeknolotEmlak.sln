@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28621.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeknolotEmlak.Android", "TeknolotEmlak\TeknolotEmlak.Android\TeknolotEmlak.Android.csproj", "{1AC126C0-062A-4D6B-8EDC-6DF8EF478E79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeknolotEmlak", "TeknolotEmlak\TeknolotEmlak\TeknolotEmlak.csproj", "{046A2D7F-7BE6-483C-AA8F-88BAF32FDCDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AC126C0-062A-4D6B-8EDC-6DF8EF478E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC126C0-062A-4D6B-8EDC-6DF8EF478E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC126C0-062A-4D6B-8EDC-6DF8EF478E79}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1AC126C0-062A-4D6B-8EDC-6DF8EF478E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC126C0-062A-4D6B-8EDC-6DF8EF478E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC126C0-062A-4D6B-8EDC-6DF8EF478E79}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{046A2D7F-7BE6-483C-AA8F-88BAF32FDCDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{046A2D7F-7BE6-483C-AA8F-88BAF32FDCDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{046A2D7F-7BE6-483C-AA8F-88BAF32FDCDF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{046A2D7F-7BE6-483C-AA8F-88BAF32FDCDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{046A2D7F-7BE6-483C-AA8F-88BAF32FDCDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{046A2D7F-7BE6-483C-AA8F-88BAF32FDCDF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A38632F8-E711-4A0F-A9BC-28618A14984E}
+	EndGlobalSection
+EndGlobal

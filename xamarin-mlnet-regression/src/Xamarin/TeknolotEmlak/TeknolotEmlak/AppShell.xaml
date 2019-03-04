@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+       xmlns:local="clr-namespace:TeknolotEmlak.Views"
+       RouteHost="companyname.com"
+       RouteScheme="app"
+       Route="TeknolotEmlak"
+       FlyoutBehavior="Disabled"
+       Title="Teknolot Emlak"
+       x:Class="TeknolotEmlak.AppShell">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Color x:Key="NavigationPrimary">#2196F3</Color>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.ShellBackgroundColor" Value="#e6007c" />
+                <Setter Property="Shell.ShellForegroundColor" Value="White" />
+                <Setter Property="Shell.ShellTitleColor" Value="White" />
+                <Setter Property="Shell.ShellDisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.ShellUnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.ShellTabBarBackgroundColor" Value="#e6007c" />
+                <Setter Property="Shell.ShellTabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.ShellTabBarUnselectedColor" Value="#95FFFFFF"/>
+                <Setter Property="Shell.ShellTabBarTitleColor" Value="White"/>
+            </Style>
+            <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+ 
+    <ShellItem>
+  
+        <ShellSection Title="Emlak Fiyat Tahmini" Icon="tab_about.png">
+            <ShellContent ContentTemplate="{DataTemplate local:PredictionPage}" />
+        </ShellSection>
+    </ShellItem>
+ 
+</Shell>

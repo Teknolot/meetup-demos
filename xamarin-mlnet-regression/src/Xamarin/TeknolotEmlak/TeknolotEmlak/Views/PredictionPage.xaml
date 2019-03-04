@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:TeknolotEmlak.ViewModels"
+             x:Class="TeknolotEmlak.Views.PredictionPage"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <viewmodels:PredictionViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content >
+        <StackLayout>
+            <ScrollView>
+                <StackLayout Spacing="10" Padding="5">
+                    <Label Text="{Binding Bedrooms, StringFormat='{}Oda Sayısı {0}'}"  FontSize="Small"/>
+                    <Slider Value="{Binding Bedrooms}"   Maximum="33" MinimumTrackColor="#FF4747" MaximumTrackColor="#27FF1B" />
+
+                    <Label Text="{Binding Bathrooms, StringFormat='{}Banyo Sayısı {0}'}" FontSize="Small" />
+                    <Slider Value="{Binding Bathrooms}"  Maximum="8" MinimumTrackColor="#FF4747" MaximumTrackColor="#27FF1B" />
+
+                    <Label Text="{Binding Sqft_Living, StringFormat='{}Feet2 {0}'}" FontSize="Small" />
+                    <Entry  Text="{Binding Sqft_Living}" Keyboard="Numeric" />
+
+                    <Label Text="{Binding Floors, StringFormat='{}Kaç Katlı {0}'}" FontSize="Small" />
+                    <Slider Value="{Binding Floors}"  Maximum="4"  Minimum="1" MinimumTrackColor="#FF4747" MaximumTrackColor="#27FF1B" />
+
+                    <Label Text="{Binding Waterfront, StringFormat='{}Deniz manzarası {0}'}" FontSize="Small" />
+                    <StackLayout Orientation="Horizontal">
+                        <Switch IsToggled="{Binding Waterfront}"></Switch>
+                    </StackLayout>
+
+                    <Label Text="{Binding View, StringFormat='{}Manzara Puanı {0}'}" FontSize="Small" />
+                    <Slider Value="{Binding View}"  Maximum="4" MinimumTrackColor="#FF4747" MaximumTrackColor="#27FF1B" />
+
+                    <Label Text="{Binding Grade, StringFormat='{}Konut Notu {0}'}" FontSize="Small" />
+                    <Slider Value="{Binding Grade}"  Maximum="13" MinimumTrackColor="#FF4747" MaximumTrackColor="#27FF1B" />
+
+                    <Label Text="{Binding Yr_Built, StringFormat='{}Yapım Yılı {0}'}" FontSize="Small" />
+                    <Slider Value="{Binding Yr_Built}"  Maximum="2019"  Minimum="1900" MinimumTrackColor="#FF4747" MaximumTrackColor="#27FF1B" />
+
+                    <Label Text="{Binding Condition, StringFormat='{}Durum {0}'}" FontSize="Small" />
+                    <Slider Value="{Binding Condition}"  Maximum="5" MinimumTrackColor="#FF4747" MaximumTrackColor="#27FF1B" />
+                </StackLayout>
+            </ScrollView>
+            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="#e6007c" Padding="15">
+                <Label VerticalTextAlignment="Center" VerticalOptions="Fill" HorizontalTextAlignment="Center" TextColor="White" FontSize="Large"  Text="{Binding Price, StringFormat='{} ${0:n0}'}" FontAttributes="Bold"></Label>
+            </StackLayout>
+         </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
